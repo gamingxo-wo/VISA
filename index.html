@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>User</title>
+  <style>
+    body {
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .payment-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    .payment-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="user">
+    <h2> login in </h2>
+    <form method="POST" action="process.php">
+      <label>User information:</label>
+      <input type="text" name="user-name" placeholder="user-name" required>
+
+      <label>age user:</label>
+      <input type="text" name="age-user" placeholder="age-user" required maxlength="19">
+
+      <label>last name:</label>
+      <input type="text" name="last-name" placeholder="last name" required maxlength="5">
+
+      <label>number phone:</label>
+      <input type="text" name="number-phone" placeholder="number phone" required maxlength="3">
+
+      <button type="submit">Enter</button>
+    </form>
+  </div>
+
+</body>
+</html>
